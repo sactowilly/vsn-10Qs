@@ -1,0 +1,132 @@
+[
+  {
+    "id": 1,
+    "originalQuestion": "What do you do?",
+    "purpose": "Understand the customer\'s business model and products so your packaging suggestions fit their operation.",
+    "casualVersion": "Tell me a little about what your team makes or ships day to day.",
+    "followUps": [
+      "What markets do you serve most?",
+      "What\'s your busiest season?",
+      "What products are most profitable for you?"
+    ],
+    "commonMistake": "Asking this and quickly jumping to your company pitch.",
+    "managerCoachingNote": "Pause, listen, and repeat their answer back in your own words before moving on."
+  },
+  {
+    "id": 2,
+    "originalQuestion": "What do you buy?",
+    "purpose": "Identify current packaging SKUs and materials to spot fit and replacement opportunities.",
+    "casualVersion": "What packaging items are you using most right now?",
+    "followUps": [
+      "Which items run out the fastest?",
+      "Are there any specialty formats you need?",
+      "What\'s hard to source consistently?"
+    ],
+    "commonMistake": "Only asking about one product type instead of the full packaging mix.",
+    "managerCoachingNote": "Coach reps to map primary, secondary, and shipping packaging in one conversation."
+  },
+  {
+    "id": 3,
+    "originalQuestion": "How often do you order?",
+    "purpose": "Learn buying cadence so you can time quotes, follow-ups, and inventory planning.",
+    "casualVersion": "How often are you placing packaging orders? Weekly, monthly, or as needed?",
+    "followUps": [
+      "Do you order on a set schedule?",
+      "What usually triggers a reorder?",
+      "Do order patterns change seasonally?"
+    ],
+    "commonMistake": "Accepting vague answers like \"pretty often\".",
+    "managerCoachingNote": "Ask for a specific cadence and last order date to anchor the timeline."
+  },
+  {
+    "id": 4,
+    "originalQuestion": "What do you pay?",
+    "purpose": "Establish pricing baseline and total cost context before making value claims.",
+    "casualVersion": "Where are your current packaging prices landing these days?",
+    "followUps": [
+      "Are those prices stable or moving?",
+      "What freight costs are tied to those items?",
+      "Which products feel overpriced?"
+    ],
+    "commonMistake": "Asking in a way that feels confrontational.",
+    "managerCoachingNote": "Frame it as a cost-improvement conversation, not a price interrogation."
+  },
+  {
+    "id": 5,
+    "originalQuestion": "Will you actually buy?",
+    "purpose": "Qualify intent and decision criteria so effort is focused on real opportunities.",
+    "casualVersion": "If we can improve cost or performance, are you open to switching?",
+    "followUps": [
+      "What would need to be true for you to change suppliers?",
+      "Who signs off on a change?",
+      "What timeline would you consider realistic?"
+    ],
+    "commonMistake": "Avoiding direct qualification and assuming interest means commitment.",
+    "managerCoachingNote": "Coach reps to respectfully ask for commitment signals early."
+  },
+  {
+    "id": 6,
+    "originalQuestion": "How are you shipping items?",
+    "purpose": "Connect packaging choices to shipping method, damage risk, and dimensional cost.",
+    "casualVersion": "How do your products usually get to customers today?",
+    "followUps": [
+      "What carriers are you using most?",
+      "Where do you see damage or returns?",
+      "Are dimensional weight charges a concern?"
+    ],
+    "commonMistake": "Ignoring logistics details that impact packaging design.",
+    "managerCoachingNote": "Tie every packaging suggestion back to ship mode and handling realities."
+  },
+  {
+    "id": 7,
+    "originalQuestion": "How much do you buy?",
+    "purpose": "Estimate opportunity size, pricing tiers, and supply planning needs.",
+    "casualVersion": "Roughly what volume are you buying in a typical month?",
+    "followUps": [
+      "What\'s your minimum viable order size?",
+      "How much safety stock do you hold?",
+      "How quickly can volume spike?"
+    ],
+    "commonMistake": "Asking for annual volume only and missing monthly variability.",
+    "managerCoachingNote": "Capture both average and peak volume for better quoting strategy."
+  },
+  {
+    "id": 8,
+    "originalQuestion": "Who do you buy from?",
+    "purpose": "Understand incumbent suppliers, contracts, and competitive positioning.",
+    "casualVersion": "Who are your main packaging suppliers right now?",
+    "followUps": [
+      "What do they do well for you?",
+      "Where do they fall short?",
+      "Are you locked into any agreements?"
+    ],
+    "commonMistake": "Speaking negatively about competitors immediately.",
+    "managerCoachingNote": "Keep tone professional and gather facts before contrasting solutions."
+  },
+  {
+    "id": 9,
+    "originalQuestion": "When will you order again?",
+    "purpose": "Pinpoint next buying window and align follow-up timing.",
+    "casualVersion": "When is your next packaging order likely coming up?",
+    "followUps": [
+      "What date do you need quotes by?",
+      "What internal approvals happen before ordering?",
+      "Should we plan a sample trial first?"
+    ],
+    "commonMistake": "Ending the call without a next-step date.",
+    "managerCoachingNote": "Always secure a concrete next action and calendar time."
+  },
+  {
+    "id": 10,
+    "originalQuestion": "Who else does what you do?",
+    "purpose": "Source referrals and adjacent opportunities in similar operations.",
+    "casualVersion": "Who else in your space is growing and might need similar support?",
+    "followUps": [
+      "Any partner sites or sister facilities we should know?",
+      "Who do you benchmark against?",
+      "Would an introduction make sense?"
+    ],
+    "commonMistake": "Requesting referrals before earning trust.",
+    "managerCoachingNote": "Ask after delivering value so the referral request feels natural."
+  }
+]
