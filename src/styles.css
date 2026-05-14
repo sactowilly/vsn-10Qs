@@ -16,3 +16,5 @@ ul, ol { padding-left: 20px; }
 label { display:block; margin:8px 0; font-weight:600; }
 textarea { min-height: 180px; }
 @media (min-width: 768px){ .tabs { grid-template-columns: repeat(6, 1fr); } }
+
+.warning { background:#fff4e8; color:#7c3300; border:1px solid #f3c3a5; padding:10px; border-radius:10px; margin:10px 0; }
