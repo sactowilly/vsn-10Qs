@@ -33,7 +33,7 @@ npm run preview
 
 ## GitHub Pages deployment
 
-This repo is configured with `base: '/vsn-10Qs/'` in `vite.config.js` for GitHub Pages hosting on this repository path.
+This repo uses `base: './'` in `vite.config.js` so built assets load correctly on GitHub Pages even if repository or path names change.
 
 1. Build the app:
    ```bash

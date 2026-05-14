@@ -2,11 +2,11 @@
   {
     "id": 1,
     "originalQuestion": "What do you do?",
-    "purpose": "Understand the customer\'s business model and products so your packaging suggestions fit their operation.",
+    "purpose": "Understand the customer's business model and products so your packaging suggestions fit their operation.",
     "casualVersion": "Tell me a little about what your team makes or ships day to day.",
     "followUps": [
       "What markets do you serve most?",
-      "What\'s your busiest season?",
+      "What's your busiest season?",
       "What products are most profitable for you?"
     ],
     "commonMistake": "Asking this and quickly jumping to your company pitch.",
@@ -20,7 +20,7 @@
     "followUps": [
       "Which items run out the fastest?",
       "Are there any specialty formats you need?",
-      "What\'s hard to source consistently?"
+      "What's hard to source consistently?"
     ],
     "commonMistake": "Only asking about one product type instead of the full packaging mix.",
     "managerCoachingNote": "Coach reps to map primary, secondary, and shipping packaging in one conversation."
@@ -83,7 +83,7 @@
     "purpose": "Estimate opportunity size, pricing tiers, and supply planning needs.",
     "casualVersion": "Roughly what volume are you buying in a typical month?",
     "followUps": [
-      "What\'s your minimum viable order size?",
+      "What's your minimum viable order size?",
       "How much safety stock do you hold?",
       "How quickly can volume spike?"
     ],

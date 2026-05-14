@@ -6,21 +6,57 @@ const tabs = ['Learn', 'Drill', 'Conversation', 'Roleplay', 'Field', 'Manager'];
 
 const getPurposePrompt = (q) => `${q.originalQuestion} → ${q.purpose}`;
 
+const safeNumber = (value, fallback = 0) => {
+  const parsed = Number(value);
+  return Number.isFinite(parsed) ? parsed : fallback;
+};
+
+const readStorage = (key, fallback) => {
+  try {
+    const raw = window.localStorage.getItem(key);
+    if (raw == null) return fallback;
+    return raw;
+  } catch {
+    return fallback;
+  }
+};
+
+const writeStorage = (key, value) => {
+  try {
+    window.localStorage.setItem(key, value);
+    return true;
+  } catch {
+    return false;
+  }
+};
+
+const parseJsonArray = (raw) => {
+  try {
+    const parsed = JSON.parse(raw);
+    return Array.isArray(parsed) ? parsed : [];
+  } catch {
+    return [];
+  }
+};
+
 export default function App() {
   const [tab, setTab] = useState('Learn');
   const [learnIdx, setLearnIdx] = useState(0);
-  const [drillScore, setDrillScore] = useState(Number(localStorage.getItem('drillScore') || 0));
+  const [drillScore, setDrillScore] = useState(() => safeNumber(readStorage('drillScore', '0'), 0));
   const [customerType, setCustomerType] = useState(customerTypes[0]);
-  const [mgrScores, setMgrScores] = useState(JSON.parse(localStorage.getItem('mgrScores') || '[]'));
+  const [mgrScores, setMgrScores] = useState(() => parseJsonArray(readStorage('mgrScores', '[]')));
+  const [storageWarning, setStorageWarning] = useState('');
 
   const progress = Math.round(((tabs.indexOf(tab) + 1) / tabs.length) * 100);
-  const current = questions[learnIdx];
-  const random = useMemo(() => questions[Math.floor(Math.random() * questions.length)], [drillScore, tab]);
+  const current = questions[learnIdx] || questions[0];
+  const random = useMemo(() => questions[Math.floor(Math.random() * questions.length)] || questions[0], [drillScore, tab]);
 
   const addDrill = (delta) => {
     const next = drillScore + delta;
     setDrillScore(next);
-    localStorage.setItem('drillScore', String(next));
+    if (!writeStorage('drillScore', String(next))) {
+      setStorageWarning('Storage is unavailable on this device/browser. Scores will reset when you refresh.');
+    }
   };
 
   const saveManagerScore = (formData) => {
@@ -28,7 +64,9 @@ export default function App() {
     record.date = new Date().toISOString();
     const next = [...mgrScores, record];
     setMgrScores(next);
-    localStorage.setItem('mgrScores', JSON.stringify(next));
+    if (!writeStorage('mgrScores', JSON.stringify(next))) {
+      setStorageWarning('Storage is unavailable on this device/browser. Manager scorecards will not persist.');
+    }
   };
 
   const exportCsv = () => {
@@ -48,6 +86,7 @@ export default function App() {
         <p>Train reps to ask discovery questions naturally.</p>
         <div className="progress"><span style={{ width: `${progress}%` }} /></div>
       </header>
+      {!!storageWarning && <p className="warning">{storageWarning}</p>}
       <nav className="tabs">{tabs.map((t) => <button key={t} className={tab === t ? 'active' : ''} onClick={() => setTab(t)}>{t}</button>)}</nav>
 
       {tab === 'Learn' && <section className="card">
@@ -84,7 +123,7 @@ export default function App() {
       </section>}
 
       {tab === 'Manager' && <section className="card"><h2>Manager Scorecard</h2>
-      <form onSubmit={(e) => {e.preventDefault(); saveManagerScore(new FormData(e.currentTarget)); e.currentTarget.reset();}}>
+      <form onSubmit={(e) => { e.preventDefault(); saveManagerScore(new FormData(e.currentTarget)); e.currentTarget.reset(); }}>
       {['rep', 'memory', 'meaning', 'conversation', 'followup', 'salesuse'].map((k) => <label key={k}>{k}<input name={k} required /></label>)}
       <button type="submit">Save score</button></form>
       <button onClick={exportCsv}>Export CSV</button>
