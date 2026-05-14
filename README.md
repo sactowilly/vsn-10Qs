@@ -31,32 +31,24 @@ npm run build
 npm run preview
 ```
 
-## GitHub Pages deployment (recommended: Actions)
+## GitHub Pages deployment
 
-This project is configured for Pages-safe static hosting:
+This repo uses `base: './'` in `vite.config.js` so built assets load correctly on GitHub Pages even if repository or path names change.
 
-- `vite.config.js` uses `base: './'` so built JS/CSS assets resolve correctly under repo subpaths.
-- `.github/workflows/deploy-pages.yml` builds and deploys `dist/` automatically.
+1. Build the app:
+   ```bash
+   npm run build
+   ```
+2. Publish the `dist/` folder to GitHub Pages (for example via `gh-pages` branch or Actions).
+3. In GitHub repo settings, set Pages source to the branch/folder where `dist` is published.
 
-### One-time GitHub setup
+### Example GitHub Actions flow
 
-1. Push this repo to GitHub.
-2. Go to **Settings → Pages**.
-3. Under **Build and deployment**, choose **Source: GitHub Actions**.
-4. Ensure your default branch is `main` (or update workflow branch trigger).
-5. Push to `main` (or run the workflow manually) and wait for the `Deploy to GitHub Pages` workflow to finish.
-
-Your site URL should be:
-
-`https://<your-username>.github.io/<your-repo>/`
-
-## Manual deployment option
-
-If you prefer manual deploys, build locally and upload/publish the `dist/` folder content to your Pages publishing branch.
-
-```bash
-npm run build
-```
+- Checkout
+- Setup Node
+- Run `npm ci`
+- Run `npm run build`
+- Deploy `dist/` to Pages
 
 ## Usage notes / sample walkthrough
 
@@ -65,3 +57,4 @@ npm run build
 - Use **Conversation Mode** before a call to rehearse by customer segment.
 - Open **Field Mode** on your phone during field visits for quick prompts.
 - Managers can save coaching records in **Manager Scorecard** and export to CSV.
+
