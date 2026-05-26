@@ -1,0 +1,80 @@
+{
+  "rewordings": [
+    {"qId": 1, "text": "Tell me what your team makes or ships day to day."},
+    {"qId": 1, "text": "Walk me through your operation — what are you producing?"},
+    {"qId": 1, "text": "What business are you in and what does your product look like going out the door?"},
+    {"qId": 1, "text": "Help me understand what you make and how it gets packaged."},
+
+    {"qId": 2, "text": "What packaging items are you using most right now?"},
+    {"qId": 2, "text": "What are your highest-volume packaging materials?"},
+    {"qId": 2, "text": "Which packaging SKUs do you go through the fastest?"},
+    {"qId": 2, "text": "What packaging materials run through your operation every week?"},
+
+    {"qId": 3, "text": "How often are you placing packaging orders — weekly, monthly, or as needed?"},
+    {"qId": 3, "text": "Do you order on a set schedule or more as things run out?"},
+    {"qId": 3, "text": "What's your typical reorder cycle for packaging supplies?"},
+    {"qId": 3, "text": "How regularly are you restocking packaging materials?"},
+
+    {"qId": 4, "text": "Where are your current packaging prices landing these days?"},
+    {"qId": 4, "text": "What are you paying for your main packaging items right now?"},
+    {"qId": 4, "text": "Have your packaging costs moved much in the last year?"},
+    {"qId": 4, "text": "What's your current pricing on your top-volume items?"},
+
+    {"qId": 5, "text": "If we can improve cost or performance, are you open to switching?"},
+    {"qId": 5, "text": "What would need to happen for you to try a new supplier?"},
+    {"qId": 5, "text": "How locked in are you with your current vendor — any contracts in place?"},
+    {"qId": 5, "text": "If we hit your numbers on price and delivery, what would be the next step?"},
+
+    {"qId": 6, "text": "How do your products usually get to customers today?"},
+    {"qId": 6, "text": "What carriers or ship methods are you using most?"},
+    {"qId": 6, "text": "Are you doing mostly LTL, parcel, or truckload?"},
+    {"qId": 6, "text": "How is finished product leaving your facility?"},
+
+    {"qId": 7, "text": "Roughly what volume are you buying in a typical month?"},
+    {"qId": 7, "text": "What does a typical month look like for packaging volume?"},
+    {"qId": 7, "text": "How many cases or rolls are you going through monthly?"},
+    {"qId": 7, "text": "What's your average monthly usage on your top packaging items?"},
+
+    {"qId": 8, "text": "Who are your main packaging suppliers right now?"},
+    {"qId": 8, "text": "Who are you sourcing your packaging from currently?"},
+    {"qId": 8, "text": "Which distributors or manufacturers are you working with today?"},
+    {"qId": 8, "text": "Who handles most of your packaging supply?"},
+
+    {"qId": 9, "text": "When is your next packaging order likely coming up?"},
+    {"qId": 9, "text": "When do you typically place your next order?"},
+    {"qId": 9, "text": "Do you have a reorder coming up soon — what's your timeline?"},
+    {"qId": 9, "text": "When would be the best time to follow up with a quote?"},
+
+    {"qId": 10, "text": "Who else in your space is growing and might need similar support?"},
+    {"qId": 10, "text": "Are there other facilities or sister plants we should be talking to?"},
+    {"qId": 10, "text": "Who do you know in the industry that might be a good fit for us?"},
+    {"qId": 10, "text": "Any other companies in your network with similar packaging needs?"}
+  ],
+  "fakes": [
+    "What's your biggest packaging challenge right now?",
+    "How many employees do you have on the floor?",
+    "Do you have a dedicated purchasing department?",
+    "What are your lead time requirements for critical items?",
+    "Are you ISO certified or working toward any quality certifications?",
+    "What does your warehouse layout look like — racking, floor stack, or both?",
+    "How far in advance do you plan your packaging orders?",
+    "What's your annual packaging budget?",
+    "Do you have preferred brands or materials you specify?",
+    "Are you the decision maker, or is there someone else I should loop in?",
+    "What's been your biggest supply chain pain point this year?",
+    "Have you ever tried stocking your own inventory vs. just-in-time ordering?",
+    "What software are you using to manage purchasing or inventory?",
+    "What does your vendor approval process look like for new suppliers?",
+    "How many packaging SKUs are you actively managing right now?",
+    "Do you ever have quality or consistency issues with your current supplier?",
+    "What's your return or credit policy with your current supplier?",
+    "Do you consolidate all packaging into one order or buy items separately?",
+    "What's your minimum order quantity with your current supplier?",
+    "Are you planning to expand your facility in the next year or two?",
+    "How often do you run out of stock before your next order arrives?",
+    "What payment terms are you on with your current supplier?",
+    "Do you ever use custom-printed or branded packaging?",
+    "What supplier certifications are most important to you?",
+    "Have supply chain disruptions affected your packaging availability recently?"
+  ]
+}

@@ -1,0 +1,74 @@
+{
+  "responseCards": [
+    {
+      "id": 1,
+      "customerSays": "We run about 50,000 poly bags a month through here.",
+      "questionId": 7,
+      "questionLabel": "How much do you buy?",
+      "coaching": "Volume drives the quote. This tells you which pricing tier applies and the size of the opportunity. Always confirm whether that's average or peak — some customers spike 3x seasonally."
+    },
+    {
+      "id": 2,
+      "customerSays": "We've been with Uline for three years. They're fine, nothing special.",
+      "questionId": 8,
+      "questionLabel": "Who do you buy from?",
+      "coaching": "'Fine, nothing special' is an opening. They're not loyal — they're just not actively unhappy yet. That relationship is already lukewarm. Keep asking and find the friction."
+    },
+    {
+      "id": 3,
+      "customerSays": "We usually order at the start of the month, sometimes sooner if we get slammed.",
+      "questionId": 3,
+      "questionLabel": "How often do you order?",
+      "coaching": "'Start of the month' gives you a follow-up window. 'If we get slammed' is a seasonality signal — ask what triggers the rush so you can anticipate it and offer to stock ahead."
+    },
+    {
+      "id": 4,
+      "customerSays": "We make frozen burritos — about 40,000 cases a week out the door.",
+      "questionId": 1,
+      "questionLabel": "What do you do?",
+      "coaching": "Operation and scale in one sentence. Now you know the product type, packaging format (film, cases, poly?), and ballpark volume. Don't pitch yet — you still have 9 questions to ask."
+    },
+    {
+      "id": 5,
+      "customerSays": "We ship LTL to distributors and some direct parcel to smaller accounts.",
+      "questionId": 6,
+      "questionLabel": "How are you shipping items?",
+      "coaching": "Two channels means two different packaging specs. LTL means pallet protection and stretch wrap matter. Parcel means dimensional weight, mailer specs, and void fill matter. Ask about damage rates on both."
+    },
+    {
+      "id": 6,
+      "customerSays": "Right now we're paying about $42 a case for stretch film.",
+      "questionId": 4,
+      "questionLabel": "What do you pay?",
+      "coaching": "Pricing baseline locked in before you make any value claim. Don't react yet — you still need gauge, yield, and roll count to know if $42 is actually high. Never compete on price before you know what you're comparing."
+    },
+    {
+      "id": 7,
+      "customerSays": "We'd need better pricing and faster local delivery to even think about switching.",
+      "questionId": 5,
+      "questionLabel": "Will you actually buy?",
+      "coaching": "They handed you the decision criteria. Price and speed. That's your pitch. Now you know exactly what to solve for — don't go back to them without addressing both."
+    },
+    {
+      "id": 8,
+      "customerSays": "Mostly stretch wrap, poly bags for parts, and tape — a lot of tape, more than anything.",
+      "questionId": 2,
+      "questionLabel": "What do you buy?",
+      "coaching": "Full packaging mix in one answer. Tape as the highest-volume item is worth noting — it's a fast-turn consumable with good margin. Lead with tape in your first quote to get a foot in the door."
+    },
+    {
+      "id": 9,
+      "customerSays": "My brother-in-law actually runs a similar plastics operation about 20 miles from here.",
+      "questionId": 10,
+      "questionLabel": "Who else does what you do?",
+      "coaching": "Warm referral — far easier than a cold call. Ask for the name and permission to mention them before you leave. Even a name to drop on your call is worth gold compared to starting cold."
+    },
+    {
+      "id": 10,
+      "customerSays": "We'll probably be putting in our next order in about two or three weeks.",
+      "questionId": 9,
+      "questionLabel": "When will you order again?",
+      "coaching": "Next buying window identified. Get a sample in front of them now and follow up with a quote in 7–10 days so they have it before they need to order. Timing your follow-up to the buying window is how you close."
+    }
+  ]
+}
