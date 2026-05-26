@@ -4,6 +4,14 @@
     "originalQuestion": "What do you do?",
     "purpose": "Understand the customer's business model and products so your packaging suggestions fit their operation.",
     "casualVersion": "Tell me a little about what your team makes or ships day to day.",
+    "conversationVersions": {
+      "bakery": "Tell me a little about what you bake and ship on a daily basis.",
+      "food manufacturer": "Tell me a little about what you produce and how it ships.",
+      "3PL": "Tell me about your operation — what types of products are you fulfilling for clients?",
+      "warehouse": "Tell me about what you're storing and distributing here.",
+      "e-commerce shipper": "Tell me about what you sell and ship — what are your main products?",
+      "industrial manufacturer": "Tell me about what you manufacture and how it gets to customers."
+    },
     "followUps": [
       "What markets do you serve most?",
       "What's your busiest season?",
@@ -17,6 +25,14 @@
     "originalQuestion": "What do you buy?",
     "purpose": "Identify current packaging SKUs and materials to spot fit and replacement opportunities.",
     "casualVersion": "What packaging items are you using most right now?",
+    "conversationVersions": {
+      "bakery": "What packaging do you use most for each item or just master cartons?",
+      "food manufacturer": "What packaging are you going through most — bags, films, cases, stretch wrap?",
+      "3PL": "What packaging supplies are your clients using most — poly mailers, boxes, void fill?",
+      "warehouse": "What are you going through most — stretch wrap, bags, tape, boxes?",
+      "e-commerce shipper": "What are you using most to ship — poly mailers, boxes, void fill, tape?",
+      "industrial manufacturer": "What packaging are you using most — stretch wrap, strapping, poly bags?"
+    },
     "followUps": [
       "Which items run out the fastest?",
       "Are there any specialty formats you need?",
@@ -69,6 +85,14 @@
     "originalQuestion": "How are you shipping items?",
     "purpose": "Connect packaging choices to shipping method, damage risk, and dimensional cost.",
     "casualVersion": "How do your products usually get to customers today?",
+    "conversationVersions": {
+      "bakery": "Are you delivering direct to stores, through a distributor, or both?",
+      "food manufacturer": "How does your product ship — LTL, truckload, direct to retail?",
+      "3PL": "What carriers and ship methods are your clients using most?",
+      "warehouse": "How is product leaving the building — LTL, parcel, or carrier pickup?",
+      "e-commerce shipper": "What carriers are you using most — UPS, FedEx, USPS, or a mix?",
+      "industrial manufacturer": "How does product ship out — LTL, truckload, or flatbed?"
+    },
     "followUps": [
       "What carriers are you using most?",
       "Where do you see damage or returns?",
@@ -82,6 +106,12 @@
     "originalQuestion": "How much do you buy?",
     "purpose": "Estimate opportunity size, pricing tiers, and supply planning needs.",
     "casualVersion": "Roughly what volume are you buying in a typical month?",
+    "conversationVersions": {
+      "bakery": "Roughly how many units or cases are you packaging in a typical week?",
+      "3PL": "Roughly what volume of packaging supplies are you moving through each month?",
+      "warehouse": "How many pallets are you wrapping or cases are you packing in a typical week?",
+      "e-commerce shipper": "Roughly how many orders or shipments are you processing per month?"
+    },
     "followUps": [
       "What's your minimum viable order size?",
       "How much safety stock do you hold?",
@@ -121,6 +151,14 @@
     "originalQuestion": "Who else does what you do?",
     "purpose": "Source referrals and adjacent opportunities in similar operations.",
     "casualVersion": "Who else in your space is growing and might need similar support?",
+    "conversationVersions": {
+      "bakery": "Any other bakeries or food producers in the area we should reach out to?",
+      "food manufacturer": "Any other food or beverage manufacturers in the area we should connect with?",
+      "3PL": "Any other 3PLs or fulfillment centers that might be a good fit for us?",
+      "warehouse": "Any other warehouses or distribution centers we should be talking to?",
+      "e-commerce shipper": "Any other e-commerce businesses in your network shipping high volume?",
+      "industrial manufacturer": "Any other manufacturers in the area looking to tighten up packaging costs?"
+    },
     "followUps": [
       "Any partner sites or sister facilities we should know?",
       "Who do you benchmark against?",

@@ -107,7 +107,7 @@ export default function App() {
 
       {tab === 'Conversation' && <section className="card"><h2>Conversation Mode</h2>
       <label>Customer type<select value={customerType} onChange={(e) => setCustomerType(e.target.value)}>{customerTypes.map((c) => <option key={c}>{c}</option>)}</select></label>
-      <ol>{questions.map((q) => <li key={q.id}><strong>{q.casualVersion}</strong> <em>(for {customerType})</em></li>)}</ol></section>}
+      <ol>{questions.map((q) => <li key={q.id}><strong>{q.conversationVersions?.[customerType] ?? q.casualVersion}</strong></li>)}</ol></section>}
 
       {tab === 'Roleplay' && <section className="card"><h2>Roleplay Mode</h2>
       <p><strong>Customer:</strong> "We already have a supplier and pricing is fine."</p>
