@@ -1,0 +1,82 @@
+[
+  {
+    "id": 1,
+    "setting": "Cold call — warehouse operations manager",
+    "customerLine": "We're happy with who we have. Pricing's fine.",
+    "bestResponse": "That's what most of our best customers told me the first time I called. Out of curiosity, when was the last time you got a competitive quote on your stretch film?",
+    "coaching": "Don't defend Vision. The goal isn't to win the argument — it's to open a crack. Asking about the last competitive bid makes them wonder if they're actually getting the best deal. Most buyers go 12–18 months without checking.",
+    "trap": "\"We can beat their price.\" You've given away leverage before learning their volume, gauge, or spec. Never lead with price."
+  },
+  {
+    "id": 2,
+    "setting": "Cold call — busy purchasing coordinator at a food manufacturer",
+    "customerLine": "Just send me something by email.",
+    "bestResponse": "Happy to — what would make it worth your time to actually open it? What packaging item gives you the most headache right now?",
+    "coaching": "\"Send me an email\" is almost always a brush-off. Don't just comply. Ask a question that makes the email relevant to them specifically — or pivot to scheduling a real five-minute call.",
+    "trap": "Saying \"Sure!\" and sending a generic product sheet. It gets deleted. You've lost the conversation and gained nothing."
+  },
+  {
+    "id": 3,
+    "setting": "Quote follow-up call — bakery purchasing manager",
+    "customerLine": "Your price on the poly bags is higher than what we're paying now.",
+    "bestResponse": "Thanks for telling me — before I do anything on price, can I ask what gauge and size you're currently running? A lot of the time we're not comparing the same spec.",
+    "coaching": "Never discount before you know what you're actually competing against. Poly bag pricing varies a lot by mil thickness, size, and quantity. Often the comparison isn't apples to apples. Uncover the spec first.",
+    "trap": "\"Let me see what I can do.\" You've trained them to negotiate without giving you any information in return. Now you're just playing margin roulette."
+  },
+  {
+    "id": 4,
+    "setting": "New prospect call — industrial manufacturer, operations buyer",
+    "customerLine": "We order direct from the manufacturer. We don't use distributors.",
+    "bestResponse": "That makes sense for your core items. What do you do when you need something fast and they're out of stock or on a 3-week lead time?",
+    "coaching": "Don't argue the direct model — you won't win that fight today. Find the pain point: stockouts, minimums, long lead times, no flexibility. That's where a local distributor like Vision wins. Our lead times are days, not weeks.",
+    "trap": "\"We have competitive pricing too.\" This doesn't address why a distributor adds value — it just turns it into a price fight you're starting behind."
+  },
+  {
+    "id": 5,
+    "setting": "Mid-conversation — purchasing coordinator at a 3PL",
+    "customerLine": "This sounds good, but I'll need to run it by my manager before doing anything.",
+    "bestResponse": "Of course. When you bring it up with her, what's the main thing she's going to want to know — is it the cost savings, the reliability, or something else?",
+    "coaching": "Don't let the conversation die with 'have her call me.' Arm your contact to sell internally. Find out what the actual decision criteria are so you can address them before the manager conversation happens — not after.",
+    "trap": "\"Sure, have her give me a call when you've talked.\" You've lost control of the timeline and the message. Your contact will probably say nothing."
+  },
+  {
+    "id": 6,
+    "setting": "New prospect call — e-commerce shipper",
+    "customerLine": "We literally just signed a one-year agreement with our current supplier last month.",
+    "bestResponse": "No problem at all — those things happen. What would have needed to be different for us to have had a shot at that agreement?",
+    "coaching": "Don't walk away. This is a free consulting call. Learn what they value — price, service, availability — so you can build the relationship for the renewal. Set a reminder for 9 months out and call back with something specific.",
+    "trap": "\"Oh okay, I'll reach back out when that expires.\" You've wasted the conversation. Ask questions now so you already know their situation when you call at renewal time."
+  },
+  {
+    "id": 7,
+    "setting": "Cold call — small food producer, owner answers",
+    "customerLine": "We're pretty small. I'm probably not worth your time.",
+    "bestResponse": "Small accounts are actually a sweet spot for us. What are you buying most right now — is it more the bags and film, or are you going through a lot of stretch wrap and tape too?",
+    "coaching": "Don't let them disqualify themselves and don't make empty reassurances. Move straight into discovery. Small customers grow, refer others, and clusters of accounts in the same industry are extremely valuable.",
+    "trap": "\"Oh we work with businesses of all sizes!\" Generic and unconvincing. It doesn't make them feel less small — it just signals you'll say anything."
+  },
+  {
+    "id": 8,
+    "setting": "New prospect visit — industrial manufacturer, purchasing manager",
+    "customerLine": "We tried a distributor before and got burned. Wrong product, took three weeks to fix. We went back to direct.",
+    "bestResponse": "That sounds genuinely awful — what happened exactly? I want to make sure if we ever work together, we're not walking into the same situation.",
+    "coaching": "Don't defend distributors or promise it won't happen. Dig into the specific failure. Was it wrong spec quoted? Poor communication? Slow response? Showing that you're taking the concern seriously — not dismissing it — is what separates you.",
+    "trap": "\"That wouldn't happen with us, we have great customer service.\" You've just said exactly what the last distributor probably said. It makes the concern worse, not better."
+  },
+  {
+    "id": 9,
+    "setting": "Existing customer call — warehouse buyer, volume has dropped off",
+    "customerLine": "We've been ordering less because we found someone a little cheaper on the stretch film.",
+    "bestResponse": "I appreciate you telling me rather than just going quiet. How much are you buying from them — same roll spec, same gauge? I want to understand exactly where the gap is before I come back to you with anything.",
+    "coaching": "This is a retention situation. Don't panic-discount immediately. Get the spec and volume details first — you need to know if this is a real price problem or a spec mismatch. Then respond with data, not a gut reaction.",
+    "trap": "\"I'll match whatever they're charging.\" Said without any information, this trains the customer to shop you every order. You've lost the relationship and the margin."
+  },
+  {
+    "id": 10,
+    "setting": "First visit — bakery operations manager, walking the floor",
+    "customerLine": "We already have a packaging supplier. We've been with them for years.",
+    "bestResponse": "That's great — long relationships mean consistency. What does that supplier do really well for you? And is there anything they've struggled to keep up with as you've grown?",
+    "coaching": "Longevity with a current supplier is a strength, not a wall. The crack is almost always in growth — the old supplier can't keep pace, lead times stretched, pricing never updated, rep stopped visiting. Ask about the gaps, not the relationship.",
+    "trap": "\"We'd love to earn your business.\" Vague, weak, and forgettable. It tells them nothing about why you're different or worth the disruption of switching."
+  }
+]

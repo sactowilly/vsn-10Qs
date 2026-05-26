@@ -1,5 +1,6 @@
 import { useMemo, useState } from 'react';
 import questions from './data/questions.json';
+import scenarios from './data/scenarios.json';
 
 const customerTypes = ['bakery', 'food manufacturer', '3PL', 'warehouse', 'e-commerce shipper', 'industrial manufacturer'];
 const tabs = ['Learn', 'Drill', 'Conversation', 'Roleplay', 'Field', 'Manager'];
@@ -46,10 +47,13 @@ export default function App() {
   const [customerType, setCustomerType] = useState(customerTypes[0]);
   const [mgrScores, setMgrScores] = useState(() => parseJsonArray(readStorage('mgrScores', '[]')));
   const [storageWarning, setStorageWarning] = useState('');
+  const [roleplayIdx, setRoleplayIdx] = useState(0);
+  const [roleplayRevealed, setRoleplayRevealed] = useState(false);
 
   const progress = Math.round(((tabs.indexOf(tab) + 1) / tabs.length) * 100);
   const current = questions[learnIdx] || questions[0];
   const random = useMemo(() => questions[Math.floor(Math.random() * questions.length)] || questions[0], [drillScore, tab]);
+  const scenario = scenarios[roleplayIdx] || scenarios[0];
 
   const addDrill = (delta) => {
     const next = drillScore + delta;
@@ -77,6 +81,11 @@ export default function App() {
     a.href = URL.createObjectURL(new Blob([rows], { type: 'text/csv' }));
     a.download = 'vision-10q-manager-scorecard.csv';
     a.click();
+  };
+
+  const goRoleplay = (idx) => {
+    setRoleplayIdx(idx);
+    setRoleplayRevealed(false);
   };
 
   return (
@@ -109,10 +118,39 @@ export default function App() {
       <label>Customer type<select value={customerType} onChange={(e) => setCustomerType(e.target.value)}>{customerTypes.map((c) => <option key={c}>{c}</option>)}</select></label>
       <ol>{questions.map((q) => <li key={q.id}><strong>{q.conversationVersions?.[customerType] ?? q.casualVersion}</strong></li>)}</ol></section>}
 
-      {tab === 'Roleplay' && <section className="card"><h2>Roleplay Mode</h2>
-      <p><strong>Customer:</strong> "We already have a supplier and pricing is fine."</p>
-      <p><strong>Best next question:</strong> "If something improved performance or reduced freight, what would you want to see first?"</p>
-      <p><strong>Coaching feedback:</strong> Acknowledge current supplier, then qualify openness to change with a value-based question.</p>
+      {tab === 'Roleplay' && <section className="card">
+        <h2>Roleplay Mode</h2>
+        <p className="roleplay-counter">{roleplayIdx + 1} of {scenarios.length}</p>
+        <p className="roleplay-setting">{scenario.setting}</p>
+        <div className="roleplay-customer">
+          <span className="roleplay-label">Customer</span>
+          <p>"{scenario.customerLine}"</p>
+        </div>
+        <p className="roleplay-prompt">What do you say?</p>
+        {!roleplayRevealed && (
+          <button className="reveal-btn" onClick={() => setRoleplayRevealed(true)}>Reveal best response</button>
+        )}
+        {roleplayRevealed && (
+          <div className="roleplay-revealed">
+            <div className="roleplay-response">
+              <span className="roleplay-label">Best response</span>
+              <p>"{scenario.bestResponse}"</p>
+            </div>
+            <div className="roleplay-coaching">
+              <span className="roleplay-label">Why it works</span>
+              <p>{scenario.coaching}</p>
+            </div>
+            <div className="roleplay-trap">
+              <span className="roleplay-label">Common trap</span>
+              <p>{scenario.trap}</p>
+            </div>
+          </div>
+        )}
+        <div className="row three">
+          <button onClick={() => goRoleplay((roleplayIdx + scenarios.length - 1) % scenarios.length)}>Prev</button>
+          <button onClick={() => goRoleplay(Math.floor(Math.random() * scenarios.length))}>Random</button>
+          <button onClick={() => goRoleplay((roleplayIdx + 1) % scenarios.length)}>Next</button>
+        </div>
       </section>}
 
       {tab === 'Field' && <section className="card"><h2>Field Mode</h2>

@@ -18,3 +18,20 @@ textarea { min-height: 180px; }
 @media (min-width: 768px){ .tabs { grid-template-columns: repeat(6, 1fr); } }
 
 .warning { background:#fff4e8; color:#7c3300; border:1px solid #f3c3a5; padding:10px; border-radius:10px; margin:10px 0; }
+
+/* Roleplay */
+.roleplay-counter { font-size:.85rem; color:#666; margin:0 0 4px; }
+.roleplay-setting { font-size:.9rem; font-style:italic; color:#555; margin:0 0 14px; border-left:3px solid var(--orange); padding-left:8px; }
+.roleplay-customer { background:#f3f4f8; border-radius:10px; padding:12px 14px; margin-bottom:12px; }
+.roleplay-customer p { margin:6px 0 0; font-size:1.1rem; font-weight:600; }
+.roleplay-prompt { text-align:center; font-weight:700; color:var(--navy); margin:14px 0 10px; }
+.reveal-btn { background:var(--navy); margin-bottom:10px; }
+.roleplay-revealed { display:flex; flex-direction:column; gap:10px; margin-bottom:14px; }
+.roleplay-response { background:#eef6ee; border-radius:10px; padding:12px 14px; }
+.roleplay-response p { margin:6px 0 0; font-size:1.05rem; font-weight:600; }
+.roleplay-coaching { background:#f3f4f8; border-radius:10px; padding:12px 14px; }
+.roleplay-coaching p { margin:6px 0 0; }
+.roleplay-trap { background:#fff4e8; border-left:3px solid var(--orange); border-radius:10px; padding:12px 14px; }
+.roleplay-trap p { margin:6px 0 0; color:#7c3300; }
+.roleplay-label { font-size:.75rem; font-weight:700; text-transform:uppercase; letter-spacing:.05em; color:#888; }
+.row.three { grid-template-columns: 1fr 1fr 1fr; }
