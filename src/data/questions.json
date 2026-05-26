@@ -12,6 +12,11 @@
       "e-commerce shipper": "Tell me about what you sell and ship — what are your main products?",
       "industrial manufacturer": "Tell me about what you manufacture and how it gets to customers."
     },
+    "alternateAsks": [
+      "Before I waste your time on anything that doesn't fit — what does a typical day look like here?",
+      "If I were shadowing you for an hour, what would I see coming through this operation?"
+    ],
+    "objectionHandle": "That's fair — I did a little research before coming in. I just want to make sure I'm thinking about the right products for your setup. Does most of what goes out here ship in cases, pallets, or both?",
     "followUps": [
       "What markets do you serve most?",
       "What's your busiest season?",
@@ -33,6 +38,11 @@
       "e-commerce shipper": "What are you using most to ship — poly mailers, boxes, void fill, tape?",
       "industrial manufacturer": "What packaging are you using most — stretch wrap, strapping, poly bags?"
     },
+    "alternateAsks": [
+      "If I could walk your supply room right now, what packaging items would I see the most of?",
+      "What's the item that, if you ran out of it, would shut down production or shipping?"
+    ],
+    "objectionHandle": "No need to list everything — just tell me what you use the most of. Stretch film? Bags? Tape? Usually one or two items drive most of the spend.",
     "followUps": [
       "Which items run out the fastest?",
       "Are there any specialty formats you need?",
@@ -46,6 +56,11 @@
     "originalQuestion": "How often do you order?",
     "purpose": "Learn buying cadence so you can time quotes, follow-ups, and inventory planning.",
     "casualVersion": "How often are you placing packaging orders? Weekly, monthly, or as needed?",
+    "alternateAsks": [
+      "Is there a reorder day or week you work around, or is it more ad hoc when things get low?",
+      "Do you work off a par level or safety stock, or more gut feel on when to reorder?"
+    ],
+    "objectionHandle": "Totally — even a rough range helps. Are we talking weekly, monthly, or longer? I just want to make sure I'm not quoting you on a minimum order you'd never actually hit.",
     "followUps": [
       "Do you order on a set schedule?",
       "What usually triggers a reorder?",
@@ -59,6 +74,11 @@
     "originalQuestion": "What do you pay?",
     "purpose": "Establish pricing baseline and total cost context before making value claims.",
     "casualVersion": "Where are your current packaging prices landing these days?",
+    "alternateAsks": [
+      "Just ballpark — are you in a range that feels right, or do you wonder if you might be overpaying?",
+      "When was the last time you got a competitive quote on this stuff?"
+    ],
+    "objectionHandle": "Completely understandable — I'm not looking for an invoice. Even a rough range helps me know if it makes sense to put numbers together. If what I come back with isn't better, I'll tell you straight.",
     "followUps": [
       "Are those prices stable or moving?",
       "What freight costs are tied to those items?",
@@ -72,6 +92,11 @@
     "originalQuestion": "Will you actually buy?",
     "purpose": "Qualify intent and decision criteria so effort is focused on real opportunities.",
     "casualVersion": "If we can improve cost or performance, are you open to switching?",
+    "alternateAsks": [
+      "Is there anything about your current setup that, if we could fix it, would make this worth a real conversation?",
+      "If the price and service were both right, what would trying something new actually look like on your end?"
+    ],
+    "objectionHandle": "That makes sense — most people aren't actively looking. I'm not asking you to switch today. I just want to understand what would have to be true. If nothing would change regardless, I'll spend my time where it makes more sense for both of us.",
     "followUps": [
       "What would need to be true for you to change suppliers?",
       "Who signs off on a change?",
@@ -93,6 +118,11 @@
       "e-commerce shipper": "What carriers are you using most — UPS, FedEx, USPS, or a mix?",
       "industrial manufacturer": "How does product ship out — LTL, truckload, or flatbed?"
     },
+    "alternateAsks": [
+      "Once a product leaves here, what does the journey look like before it reaches the end customer?",
+      "Are you seeing any damage or returns tied to how things are packed for shipment?"
+    ],
+    "objectionHandle": "Good to know — who would I connect with on that side? The reason I ask is that the packaging spec is different for LTL freight versus parcel. I want to quote you the right thing the first time instead of having to redo it.",
     "followUps": [
       "What carriers are you using most?",
       "Where do you see damage or returns?",
@@ -112,6 +142,11 @@
       "warehouse": "How many pallets are you wrapping or cases are you packing in a typical week?",
       "e-commerce shipper": "Roughly how many orders or shipments are you processing per month?"
     },
+    "alternateAsks": [
+      "If I were putting a quote together today, what number of cases or rolls would be a realistic starting point?",
+      "What does your best month look like versus a slow month — volume-wise?"
+    ],
+    "objectionHandle": "Rough numbers are fine — I'm not holding you to it. Even a ballpark gets you into the right pricing tier. Is it closer to a few hundred dollars a month in packaging or a few thousand?",
     "followUps": [
       "What's your minimum viable order size?",
       "How much safety stock do you hold?",
@@ -125,6 +160,11 @@
     "originalQuestion": "Who do you buy from?",
     "purpose": "Understand incumbent suppliers, contracts, and competitive positioning.",
     "casualVersion": "Who are your main packaging suppliers right now?",
+    "alternateAsks": [
+      "Are you going through a local distributor, buying direct from the manufacturer, or a mix?",
+      "Besides your main supplier, do you have any backups you use when they're out of stock?"
+    ],
+    "objectionHandle": "No problem — I'm not trying to talk about the competition. It just helps me understand where Vision would fit in. Is there anything your current supplier isn't covering well?",
     "followUps": [
       "What do they do well for you?",
       "Where do they fall short?",
@@ -138,6 +178,11 @@
     "originalQuestion": "When will you order again?",
     "purpose": "Pinpoint next buying window and align follow-up timing.",
     "casualVersion": "When is your next packaging order likely coming up?",
+    "alternateAsks": [
+      "If I were going to get you something worth looking at, when would I need to have it in front of you?",
+      "Is there a date you'd need a quote by to have it considered for your next order?"
+    ],
+    "objectionHandle": "Fair enough — I just don't want to call right after you've already placed an order somewhere else. Even a rough window — a few weeks, end of the month — helps me know when to follow up with something actually useful.",
     "followUps": [
       "What date do you need quotes by?",
       "What internal approvals happen before ordering?",
@@ -159,6 +204,11 @@
       "e-commerce shipper": "Any other e-commerce businesses in your network shipping high volume?",
       "industrial manufacturer": "Any other manufacturers in the area looking to tighten up packaging costs?"
     },
+    "alternateAsks": [
+      "Are there other plants, sister facilities, or companies in your network doing similar work?",
+      "If you were going to refer me to someone, who in your circle would be a natural fit for what we do?"
+    ],
+    "objectionHandle": "No worries — even just a name to mention when I call someone cold makes a big difference. If you think of someone, I'd love it if you passed my card along.",
     "followUps": [
       "Any partner sites or sister facilities we should know?",
       "Who do you benchmark against?",

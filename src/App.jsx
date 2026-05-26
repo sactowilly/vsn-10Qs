@@ -245,7 +245,22 @@ export default function App() {
           ) : (
             <div className="flash-back">
               {flashType === 'question' ? (
-                <p>{flashCard.purpose}</p>
+                <>
+                  <div className="flash-section">
+                    <span className="flash-back-label">Purpose</span>
+                    <p>{flashCard.purpose}</p>
+                  </div>
+                  <div className="flash-section">
+                    <span className="flash-back-label">Two other ways to ask</span>
+                    <ol className="flash-alts">
+                      {flashCard.alternateAsks.map((a, i) => <li key={i}>"{a}"</li>)}
+                    </ol>
+                  </div>
+                  <div className="flash-section flash-objection">
+                    <span className="flash-back-label">If they resist answering</span>
+                    <p>"{flashCard.objectionHandle}"</p>
+                  </div>
+                </>
               ) : (
                 <>
                   <strong>Q{flashCard.questionId}: {flashCard.questionLabel}</strong>

@@ -66,9 +66,16 @@ textarea { min-height: 180px; }
 .flashcard { background:var(--navy); color:var(--white); border-radius:14px; min-height:180px; padding:20px; cursor:pointer; display:flex; align-items:center; justify-content:center; margin:10px 0 14px; user-select:none; }
 .flashcard.response { background:var(--orange); }
 .flash-front, .flash-back { width:100%; text-align:center; display:flex; flex-direction:column; align-items:center; gap:10px; }
-.flash-back { background:var(--white); color:var(--black); border-radius:10px; padding:14px; }
+.flash-back { background:var(--white); color:var(--black); border-radius:10px; padding:14px; width:100%; text-align:left; }
 .flash-back strong { color:var(--navy); font-size:1rem; }
 .flash-back p { margin:6px 0 0; font-size:.95rem; line-height:1.5; }
+.flash-section { margin-bottom:12px; }
+.flash-section:last-of-type { margin-bottom:0; }
+.flash-back-label { font-size:.7rem; font-weight:700; text-transform:uppercase; letter-spacing:.06em; color:#888; display:block; margin-bottom:4px; }
+.flash-alts { margin:4px 0 0; padding-left:18px; font-size:.9rem; line-height:1.5; }
+.flash-alts li { margin-bottom:4px; }
+.flash-objection { background:#fff4e8; border-left:3px solid var(--orange); border-radius:8px; padding:10px 12px; }
+.flash-objection p { color:#7c3300; }
 .flash-tag { font-size:2.5rem; font-weight:900; opacity:.9; line-height:1; }
 .flashcard p { font-size:1.1rem; font-weight:600; line-height:1.4; margin:0; }
 .flip-hint { font-size:.75rem; opacity:.6; margin-top:6px; }
