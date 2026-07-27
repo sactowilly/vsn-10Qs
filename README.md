@@ -1,60 +1,44 @@
-# Vision 10Q Trainer
+# Vision 10Q Sales Trainer
 
-A mobile-first React + Vite training app for Vision Packaging outside sales reps. It helps reps memorize, understand, and naturally use Vision's 10 discovery questions in customer conversations.
+A mobile-first practice app that helps Vision Packaging sales reps understand, recall, and naturally use the 10 discovery questions.
 
-## Features
+## Training modes
 
-- **Learn Mode**: Flashcards with question intent, casual version, follow-ups, mistakes, and coaching.
-- **Drill Mode**: Timed recall, random quiz, and purpose matching with persistent score in localStorage.
-- **Conversation Mode**: Customer-type selector with a natural conversation flow using all 10 questions.
-- **Roleplay Mode**: Objection handling scenario with coaching feedback.
-- **Field Mode**: Mobile cheat sheet with opening line, conversation path, closing question, and copyable Salesforce note template.
-- **Manager Scorecard**: Local scoring form + CSV export.
+- **Learn:** Study each question's purpose, natural phrasing, follow-ups, common mistake, and coaching note.
+- **Drill:** Identify the 10 framework questions among five decoys and get immediate scoring feedback.
+- **Field:** Choose a customer type, follow a call-ready conversation guide, and copy a structured Salesforce note template.
+- **Roleplay:** Practice realistic customer objections before revealing a recommended response and coaching.
+- **Flashcards:** Build fluency with question cards and customer-response cards.
 
-## Tech
+Training state is session-only and resets when the page refreshes. The app does not collect or transmit customer information.
+
+## Technology
 
 - React 18
-- Vite 5
-- Static frontend only (no backend)
+- Vite 8
+- Static GitHub Pages deployment
+- Dependency-free Node tests and content validation
 
 ## Local development
 
+Requires Node.js 20.19 or newer.
+
 ```bash
-npm install
+npm ci
 npm run dev
 ```
 
-## Production build
+## Validation
 
 ```bash
-npm run build
-npm run preview
+npm run check
 ```
 
-## GitHub Pages deployment
+The check command validates the training datasets, runs deterministic quiz tests, and creates a production build.
 
-This repo uses `base: './'` in `vite.config.js` so built assets load correctly on GitHub Pages even if repository or path names change.
+## GitHub Pages
 
-1. Build the app:
-   ```bash
-   npm run build
-   ```
-2. Publish the `dist/` folder to GitHub Pages (for example via `gh-pages` branch or Actions).
-3. In GitHub repo settings, set Pages source to the branch/folder where `dist` is published.
+The workflow in `.github/workflows/deploy-pages.yml` validates every pull request targeting `main`. Pushes to `main` additionally publish the production `dist/` artifact to GitHub Pages.
 
-### Example GitHub Actions flow
-
-- Checkout
-- Setup Node
-- Run `npm ci`
-- Run `npm run build`
-- Deploy `dist/` to Pages
-
-## Usage notes / sample walkthrough
-
-- Start in **Learn Mode** and swipe through all 10 questions.
-- Switch to **Drill Mode** and complete one timed recall cycle.
-- Use **Conversation Mode** before a call to rehearse by customer segment.
-- Open **Field Mode** on your phone during field visits for quick prompts.
-- Managers can save coaching records in **Manager Scorecard** and export to CSV.
+`vite.config.js` uses a relative base path so the built assets work from the repository subpath.
 
