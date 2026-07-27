@@ -9,4 +9,6 @@
 - Upgraded the build toolchain, added an audit-clean lockfile, and added pull-request quality gates.
 - Verification passed: clean `npm ci`, data validation, 6/6 tests, Vite production build, zero dependency vulnerabilities, diff check, secret scan, and headless Chrome interaction/layout checks at 390px and 1440px.
 - Open items resolved: incorrect perfect-score handling, biased shuffling, inaccessible flashcards, mobile overflow risk, non-reproducible deployments, and stale product documentation.
-- Next step: publish `agent/polish-training-experience`, merge the reviewed pull request to `main`, and confirm the Pages workflow.
+- Published through PR #4 and confirmed the `main` GitHub Pages build and deployment.
+- Refreshed the Pages workflow to the current official action releases after the successful deployment surfaced a deprecated action-runtime annotation.
+- Next step: keep training content current and preserve the validation, test, accessibility, and deployment gates for future changes.
