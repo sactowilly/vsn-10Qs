@@ -1,5 +1,12 @@
 # Build Log
 
+### 2026-07-27 -- Apply the supplied Vision favicon assets
+
+- Replaced the generated inline favicon with the supplied transparent solid and white Vision PNGs in `public/`.
+- Configured light and dark browser-tab variants in `index.html`.
+- Validation passed: `npm run check`, production build, and favicon asset presence in `dist/`.
+- Next step: publish this small branding update through the normal PR and Pages deployment gate.
+
 ### 2026-07-27 -- Recover current GitHub source and begin product hardening
 
 - Created a clean checkout from `main` at `af5f2a4` and isolated work on `agent/polish-training-experience`.
